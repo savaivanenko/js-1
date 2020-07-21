@@ -1,8 +1,8 @@
 'use strict';
 
 let message;
-let userPassword = prompt ("Введите пароль", '****');
-console.log (userPassword);
+let userPassword = prompt("Введите пароль", '****');
+console.log(userPassword);
 
 if (userPassword === null) {
   message = 'Отменено пользователем!';
@@ -13,4 +13,4 @@ else if (userPassword === 'jqueryismyjam') {
 else {
   message = 'Доступ запрещен, неверный пароль!';
 }
-console.log (message);
+console.log(message);

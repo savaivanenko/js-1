@@ -4,6 +4,7 @@ userCountry = userCountry[0].toUpperCase() + userCountry.slice(1);
 console.log((userCountry));
 
 let delivery;
+let massage = true;
 
 switch (userCountry){
 
@@ -28,6 +29,11 @@ switch (userCountry){
   break;
 
   default:
-    alert('В вашей стране доставка не доступна');
+    delivery = false;
 }
- alert(`Доставка в "${userCountry}" будет стоить "${delivery}" кредитов`);
+if (delivery === false){
+  alert('В вашей стране доставка не доступна');
+}
+else{
+  alert(`Доставка в "${userCountry}" будет стоить "${delivery}" кредитов`)
+};
