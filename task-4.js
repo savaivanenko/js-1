@@ -2,12 +2,12 @@ const credits = 23580;
 const pricePerDroid = 3000;
 let message;
 let totalPrice;
-let userOrder = prompt ("Сколько дроидов вы желаете приобрести");
-console.log (Number.parseInt(userOrder));
+let userOrder = prompt("Сколько дроидов вы желаете приобрести");
+console.log(Number.parseInt(userOrder));
 
 if (userOrder === null) {
   message = 'Отменено пользователем!';
-  console.log (message);
+  console.log(message);
 }
 else{
   totalPrice = userOrder * pricePerDroid;
